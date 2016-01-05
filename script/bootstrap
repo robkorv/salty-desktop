@@ -1,0 +1,31 @@
+#!/bin/sh
+
+# script/bootstrap: Resolve all dependencies that the application requires to
+#                   run.
+
+set -e
+
+cd "$(dirname "$0")/.."
+
+if [ "$(which add-apt-repository)" ]; then
+    echo "==> Add-apt-repository command available"
+else
+    echo "==> Installing software-properties-common"
+    sudo apt-get -y software-properties-common
+fi
+
+# https://docs.saltstack.com/en/2015.5/topics/installation/ubuntu.html
+if [ -f "/etc/apt/sources.list.d/saltstack-salt-trusty.list" ]; then
+    echo "==> SaltStack repository available"
+else
+    echo "==> Adding the SaltStack repository"
+    sudo add-apt-repository ppa:saltstack/salt -y
+    echo "==> Updating repository"
+    sudo apt-get update
+    echo "==> Installing salt-minion"
+    sudo apt-get install salt-minion -y
+    echo "==> Creating salt-minion salty-desktop config"
+    printf 'id: salty-desktop\nfile_client: local\n\n' | sudo tee /etc/salt/minion
+    echo "==> Setting access permissions to salt-minion config"
+    sudo chmod 0644 /etc/salt/minion
+fi
