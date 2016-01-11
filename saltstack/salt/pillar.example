@@ -1,0 +1,4 @@
+pre-desktop:
+  extra-packages:
+    - vim
+    - git

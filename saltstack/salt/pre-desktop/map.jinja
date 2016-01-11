@@ -1,0 +1,2 @@
+{% import_yaml "pre-desktop/defaults.yaml" as default_settings %}
+{% set pre_desktop = salt.pillar.get('pre-desktop', default=default_settings, merge=True) %}

@@ -1,0 +1,4 @@
+packages:
+  - ubuntu-desktop
+  - ubuntu-restricted-extras
+extra-packages: []
