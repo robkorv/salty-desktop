@@ -29,5 +29,11 @@ Vagrant.configure(2) do |config|
                          type: 'shell',
                          inline: '/bin/sh salty-desktop/script/bootstrap',
                          privileged: false
+    # update the environment
+    desktop.vm.provision 'update',
+                         type: 'shell',
+                         inline: '/bin/sh salty-desktop/script/update',
+                         run: 'always',
+                         privileged: false
   end
 end

@@ -1,0 +1,4 @@
+base:
+  '*':
+    - uptodate
+    - pre-desktop

@@ -1,2 +1,8 @@
 # Vagrant
 .vagrant
+
+# don't commit pillar data
+saltstack/pillar
+
+# keep dirs with .gitkeep in them
+!.gitkeep
