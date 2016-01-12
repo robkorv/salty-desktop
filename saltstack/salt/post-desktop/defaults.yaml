@@ -1,0 +1,4 @@
+autologin: false
+user: vagrant
+packages: []
+extra-packages: []

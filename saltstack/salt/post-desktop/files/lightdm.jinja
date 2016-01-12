@@ -1,0 +1,4 @@
+{% from "post-desktop/map.jinja" import post_desktop with context %}
+{% set user = post_desktop.get('user') %}
+[SeatDefaults]
+autologin-user={{ user }}

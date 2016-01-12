@@ -2,3 +2,6 @@ pre-desktop:
   extra-packages:
     - vim
     - git
+post-desktop:
+  user: vagrant
+  autologin: true
