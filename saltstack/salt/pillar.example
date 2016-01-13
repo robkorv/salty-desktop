@@ -1,3 +1,4 @@
+user: vagrant
 pre-desktop:
   locale-system: nl_NL
   locales-present:
@@ -11,5 +12,4 @@ pre-desktop:
   # https://www.microsoft.com/typography/fontpack/eula.htm
   accept-mscorefonts-eula: true
 post-desktop:
-  user: vagrant
   autologin: true
