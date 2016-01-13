@@ -1,5 +1,6 @@
 locale-system: en_US
 locales-present: []
+timezone: Etc/UTC
 packages:
   - ubuntu-desktop
 restricted-extras-packages:

@@ -1,8 +1,8 @@
 pre-desktop:
-  locale-system: en_US
+  locale-system: nl_NL
   locales-present:
-    - nl_NL
     - fr_FR
+  timezone: Europe/Amsterdam
   extra-packages:
     - vim
     - git
