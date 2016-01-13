@@ -4,6 +4,7 @@
 include:
   - pre-desktop.install-language
   - pre-desktop.set-locale
+  - pre-desktop.set-timezone
   - pre-desktop.install-desktop
 {% if install_restricted_extras %}
   - pre-desktop.install-restricted-extras
