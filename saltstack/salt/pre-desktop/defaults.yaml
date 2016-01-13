@@ -2,5 +2,10 @@ locale-system: en_US
 locales-present: []
 packages:
   - ubuntu-desktop
+restricted-extras-packages:
   - ubuntu-restricted-extras
 extra-packages: []
+# https://en.wikipedia.org/wiki/Ubuntu-restricted-extras
+install-restricted-extras: false
+# https://www.microsoft.com/typography/fontpack/eula.htm
+accept-mscorefonts-eula: false
