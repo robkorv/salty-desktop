@@ -1,17 +1,17 @@
 {% from "pre-desktop/map.jinja" import pre_desktop with context %}
-{% set locale = pre_desktop.get('locale') %}
-{% set extra_locales = pre_desktop.get('extra-locales') %}
+{% set locale_system = pre_desktop.get('locale-system') %}
+{% set locales_present = pre_desktop.get('locales-present') %}
 
-default locale present:
+locale system present:
   locale.present:
-    - name: {{ locale }}.UTF-8
+    - name: {{ locale_system }}.UTF-8
 
-default locale system:
+set locale system:
   locale.system:
-    - name: {{ locale }}.UTF-8
+    - name: {{ locale_system }}.UTF-8
 
-{% for extra_locale in extra_locales %}
-{{ extra_locale }} locale present:
+{% for locale_present in locales_present %}
+{{ locale_present }} locale present:
   locale.present:
-    - name: {{ extra_locale }}.UTF-8
+    - name: {{ locale_present }}.UTF-8
 {% endfor %}

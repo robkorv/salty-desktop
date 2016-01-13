@@ -1,19 +1,19 @@
 {% from "pre-desktop/map.jinja" import pre_desktop with context %}
-{% set locale = pre_desktop.get('locale') %}
-{% set extra_locales = pre_desktop.get('extra-locales') %}
-{% set default_language_packs = salt.cmd.run_stdout('check-language-support -l %s' % locale).split() %}
+{% set locale_system = pre_desktop.get('locale-system') %}
+{% set locales_present = pre_desktop.get('locales-present') %}
+{% set system_language_packs = salt.cmd.run_stdout('check-language-support -l %s' % locale_system).split() %}
 
-{% if default_language_packs %}
-default missing language packs:
+{% if system_language_packs %}
+system language packs:
   pkg.installed:
-    - pkgs: {{ default_language_packs }}
+    - pkgs: {{ system_language_packs }}
 {% endif %}
 
-{% for extra_locale in extra_locales %}
-{% set extra_language_packs = salt.cmd.run_stdout('check-language-support -l %s' % extra_locale).split() %}
-{% if extra_language_packs %}
-{{ extra_locale }} missing language packs:
+{% for locale_present in locales_present %}
+{% set locale_language_packs = salt.cmd.run_stdout('check-language-support -l %s' % locale_present).split() %}
+{% if locale_language_packs %}
+{{ locale_present }} language packs:
   pkg.installed:
-    - pkgs: {{ extra_language_packs }}
+    - pkgs: {{ locale_language_packs }}
 {% endif %}
 {% endfor %}

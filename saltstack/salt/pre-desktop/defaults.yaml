@@ -1,5 +1,5 @@
-locale: en_US
-extra-locales: []
+locale-system: en_US
+locales-present: []
 packages:
   - ubuntu-desktop
   - ubuntu-restricted-extras

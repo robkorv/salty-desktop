@@ -1,7 +1,8 @@
 pre-desktop:
-  locale: en_US
-  extra-locales:
+  locale-system: en_US
+  locales-present:
     - nl_NL
+    - fr_FR
   extra-packages:
     - vim
     - git
