@@ -1,0 +1,2 @@
+{% import_yaml "customize-desktop/defaults.yaml" as default_settings %}
+{% set customize_desktop = salt.pillar.get('customize-desktop', default=default_settings, merge=true) %}
