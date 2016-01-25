@@ -7,9 +7,10 @@ pre-desktop:
   extra-packages:
     - vim
     - git
-  # https://en.wikipedia.org/wiki/Ubuntu-restricted-extras
   install-restricted-extras: true
-  # https://www.microsoft.com/typography/fontpack/eula.htm
   accept-mscorefonts-eula: true
 post-desktop:
   autologin: true
+customize-desktop:
+  launcher-favorites-applications:
+    - application://firefox.desktop
