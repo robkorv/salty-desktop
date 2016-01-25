@@ -3,4 +3,4 @@ launcher-favorites-defaults:
  - 'unity://running-apps'
  - 'unity://expo-icon'
  - 'unity://devices'
-launcher-favorites-extras: []
+launcher-favorites-applications: []
