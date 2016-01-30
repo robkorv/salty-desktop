@@ -4,3 +4,4 @@ launcher_favorites_defaults:
  - 'unity://expo-icon'
  - 'unity://devices'
 launcher_favorites_applications: []
+third_party_applications: []

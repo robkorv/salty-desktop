@@ -12,5 +12,8 @@ pre_desktop:
 post_desktop:
   autologin: true
 customize_desktop:
+  third_party_applications:
+   - google-chrome
+   - spotify
   launcher_favorites_applications:
-    - application://firefox.desktop
+    - firefox
