@@ -5,3 +5,4 @@ base:
     - post_desktop
     - customize_desktop
     - install_packages
+    - install_gems
