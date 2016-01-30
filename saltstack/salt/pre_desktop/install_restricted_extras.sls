@@ -1,6 +1,6 @@
 {% from "pre_desktop/map.jinja" import pre_desktop with context %}
 
-Microsoft Core fonts for the Web:
+install_ms_web_fonts:
   debconf.set:
     - name: ttf-mscorefonts-installer
     - data: { 'msttcorefonts/accepted-mscorefonts-eula': { 'type': 'boolean', 'value': True } }

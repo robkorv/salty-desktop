@@ -6,7 +6,7 @@
 {% set favorites_current =  salt.cmd.run('gsettings get com.canonical.Unity.Launcher favorites', runas=user)|load_yaml %}
 
 
-set Unity Launcher favorites:
+set_unity_launcher_favorites:
   cmd.run:
     - name: gsettings set com.canonical.Unity.Launcher favorites "{{ favorites }}"
     - user: {{ user }}

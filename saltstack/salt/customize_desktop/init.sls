@@ -4,6 +4,6 @@
 
 {% if desktop_available %}
 include:
-  - customize_desktop.set_launcher_favorites
+  - customize_desktop.unity_launcher
 {% endif %}
 
