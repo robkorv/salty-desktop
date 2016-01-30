@@ -1,6 +1,6 @@
 base:
   '*':
     - uptodate
-    - pre-desktop
-    - post-desktop
-    - customize-desktop
+    - pre_desktop
+    - post_desktop
+    - customize_desktop

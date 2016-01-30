@@ -1,6 +1,6 @@
-{% from "pre-desktop/map.jinja" import pre_desktop with context %}
-{% set locale_system = pre_desktop.get('locale-system') %}
-{% set locales_present = pre_desktop.get('locales-present') %}
+{% from "pre_desktop/map.jinja" import pre_desktop with context %}
+{% set locale_system = pre_desktop.get('locale_system') %}
+{% set locales_present = pre_desktop.get('locales_present') %}
 {% set system_language_packs = salt.cmd.run('check-language-support -l %s' % locale_system).split() %}
 
 {% if system_language_packs %}

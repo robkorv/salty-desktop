@@ -1,6 +1,6 @@
 user: vagrant
-launcher-favorites-defaults:
+launcher_favorites_defaults:
  - 'unity://running-apps'
  - 'unity://expo-icon'
  - 'unity://devices'
-launcher-favorites-applications: []
+launcher_favorites_applications: []

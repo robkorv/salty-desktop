@@ -1,16 +1,16 @@
 user: vagrant
-pre-desktop:
-  locale-system: nl_NL
-  locales-present:
+pre_desktop:
+  locale_system: nl_NL
+  locales_present:
     - fr_FR
   timezone: Europe/Amsterdam
-  extra-packages:
+  extra_packages:
     - vim
     - git
-  install-restricted-extras: true
-  accept-mscorefonts-eula: true
-post-desktop:
+  install_restricted_extras: true
+  accept_mscorefonts_eula: true
+post_desktop:
   autologin: true
-customize-desktop:
-  launcher-favorites-applications:
+customize_desktop:
+  launcher_favorites_applications:
     - application://firefox.desktop
