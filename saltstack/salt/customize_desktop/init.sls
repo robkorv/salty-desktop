@@ -10,6 +10,9 @@ include:
 {% if 'spotify' in customize_desktop.get('third_party_applications') %}
   - customize_desktop.install_spotify
 {% endif %}
+{% if 'sublime-text' in customize_desktop.get('third_party_applications') %}
+  - customize_desktop.install_sublime_text
+{% endif %}
   - customize_desktop.unity_launcher
 {% endif %}
 
