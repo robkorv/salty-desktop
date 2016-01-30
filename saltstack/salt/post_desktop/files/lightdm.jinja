@@ -1,4 +1,4 @@
-{% from "post-desktop/map.jinja" import post_desktop with context %}
+{% from "post_desktop/map.jinja" import post_desktop with context %}
 {% set user = salt.pillar.get('user', post_desktop.get('user')) %}
 [SeatDefaults]
 autologin-user={{ user }}

@@ -1,12 +1,12 @@
-locale-system: en_US
-locales-present: []
+locale_system: en_US
+locales_present: []
 timezone: Etc/UTC
 packages:
   - ubuntu-desktop
-restricted-extras-packages:
+restricted_extras_packages:
   - ubuntu-restricted-extras
-extra-packages: []
+extra_packages: []
 # https://en.wikipedia.org/wiki/Ubuntu-restricted-extras
-install-restricted-extras: false
+install_restricted_extras: false
 # https://www.microsoft.com/typography/fontpack/eula.htm
-accept-mscorefonts-eula: false
+accept_mscorefonts_eula: false

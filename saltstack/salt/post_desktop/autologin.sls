@@ -1,7 +1,8 @@
 # https://wiki.ubuntu.com/LightDM#Setting_an_Automatic_Login
-/etc/lightdm/lightdm.conf:
+set_lightdm_conf:
   file.managed:
-    - source: salt://post-desktop/files/lightdm.jinja
+    - name: /etc/lightdm/lightdm.conf
+    - source: salt://post_desktop/files/lightdm.jinja
     - template: jinja
     - user: root
     - group: root
