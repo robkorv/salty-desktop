@@ -4,6 +4,12 @@
 
 {% if desktop_available %}
 include:
+{% if 'google-chrome' in customize_desktop.get('third_party_applications') %}
+  - customize_desktop.install_google_chrome
+{% endif %}
+{% if 'spotify' in customize_desktop.get('third_party_applications') %}
+  - customize_desktop.install_spotify
+{% endif %}
   - customize_desktop.unity_launcher
 {% endif %}
 
