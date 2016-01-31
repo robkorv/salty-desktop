@@ -6,3 +6,4 @@ launcher_favorites_defaults:
 launcher_favorites_applications: []
 third_party_applications: []
 configure_git: {}
+generate_ssh_keys: []
