@@ -1,4 +1,5 @@
 enable_ufw: true
+disable_quiet_graphical_boot: false
 locale_system: en_US
 locales_present: []
 timezone: Etc/UTC
