@@ -2,6 +2,9 @@
 {% set install_restricted_extras = pre_desktop.get('install_restricted_extras') %}
 
 include:
+{% if pre_desktop.get('enable_ufw') %}
+  - pre_desktop.enable_ufw
+{% endif %}
   - pre_desktop.install_language
   - pre_desktop.set_locale
   - pre_desktop.set_timezone

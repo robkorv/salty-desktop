@@ -1,3 +1,4 @@
+enable_ufw: true
 locale_system: en_US
 locales_present: []
 timezone: Etc/UTC
