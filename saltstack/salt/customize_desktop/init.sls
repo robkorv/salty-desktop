@@ -10,6 +10,21 @@ include:
 {% if 'spotify' in customize_desktop.get('third_party_applications') %}
   - customize_desktop.install_spotify
 {% endif %}
+{% if 'sublime-text' in customize_desktop.get('third_party_applications') %}
+  - customize_desktop.install_sublime_text
+{% endif %}
+{% if 'virtualbox' in customize_desktop.get('third_party_applications') %}
+  - customize_desktop.install_virtualbox
+{% endif %}
+{% if 'vagrant' in customize_desktop.get('third_party_applications') %}
+  - customize_desktop.install_vagrant
+{% endif %}
   - customize_desktop.unity_launcher
+{% if customize_desktop.get('configure_git') %}
+  - customize_desktop.configure_git
+{% endif %}
+{% if customize_desktop.get('generate_ssh_keys') %}
+  - customize_desktop.generate_ssh_keys
+{% endif %}
 {% endif %}
 
