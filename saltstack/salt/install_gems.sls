@@ -1,6 +1,6 @@
 {% set install_gems = salt.pillar.get('install_gems', []) %}
-{% for gem in install_gems %}
 
+{% for gem in install_gems %}
 {{ gem }}:
   gem.installed:
     - require:

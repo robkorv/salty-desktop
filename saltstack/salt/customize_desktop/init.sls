@@ -19,6 +19,9 @@ include:
 {% if 'vagrant' in customize_desktop.get('third_party_applications') %}
   - customize_desktop.install_vagrant
 {% endif %}
+{% if customize_desktop.get('configure_git') %}
+  - customize_desktop.configure_git
+{% endif %}
   - customize_desktop.unity_launcher
 {% endif %}
 
