@@ -1,3 +1,4 @@
+# http://www.sublimetext.com/3
 install_sublime_text:
   pkg.installed:
     - name: sublime-text

@@ -13,6 +13,12 @@ include:
 {% if 'sublime-text' in customize_desktop.get('third_party_applications') %}
   - customize_desktop.install_sublime_text
 {% endif %}
+{% if 'virtualbox' in customize_desktop.get('third_party_applications') %}
+  - customize_desktop.install_virtualbox
+{% endif %}
+{% if 'vagrant' in customize_desktop.get('third_party_applications') %}
+  - customize_desktop.install_vagrant
+{% endif %}
   - customize_desktop.unity_launcher
 {% endif %}
 
