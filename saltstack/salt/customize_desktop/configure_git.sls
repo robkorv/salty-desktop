@@ -1,5 +1,5 @@
 {% from "customize_desktop/map.jinja" import customize_desktop with context %}
-{% set user = customize_desktop.get('user') %}
+{% set user = salt.pillar.get('user') %}
 {% set git_user = customize_desktop.configure_git.get('user') %}
 {% set git_core = customize_desktop.configure_git.get('core') %}
 {% set git_merge = customize_desktop.configure_git.get('merge') %}

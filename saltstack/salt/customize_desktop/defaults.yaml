@@ -1,4 +1,3 @@
-user: vagrant
 launcher_favorites_defaults:
  - 'unity://running-apps'
  - 'unity://expo-icon'

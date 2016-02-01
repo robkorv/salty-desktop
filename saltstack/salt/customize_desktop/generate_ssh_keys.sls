@@ -2,7 +2,7 @@
 # http://linux.die.net/man/1/ssh-keygen
 
 {% from "customize_desktop/map.jinja" import customize_desktop with context %}
-{% set user = customize_desktop.get('user') %}
+{% set user = salt.pillar.get('user') %}
 
 /home/{{ user }}/.ssh:
   file.directory:

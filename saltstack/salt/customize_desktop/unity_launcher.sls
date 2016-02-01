@@ -1,5 +1,5 @@
 {% from "customize_desktop/map.jinja" import customize_desktop with context %}
-{% set user = salt.pillar.get('user', customize_desktop.get('user')) %}
+{% set user = salt.pillar.get('user') %}
 {% set favorites_default =  customize_desktop.get('launcher_favorites_defaults') %}
 {% set favorites_applications = [] %}
 {% for application in customize_desktop.get('launcher_favorites_applications') %}
