@@ -65,6 +65,7 @@ customize_desktop:
     - sublime-text
     - virtualbox
     - vagrant
+    - nodejs
   launcher_favorites_applications:
     - firefox
     - spotify
@@ -92,6 +93,10 @@ install_packages:
   - gdebi-core
   - byobu
   - kdiff3-qt
+install_pips:
+  - flake8
+  - pep257
+update_pips: true
 ```
 
 The options are kind of self explanatory, open an issue when you have a question.

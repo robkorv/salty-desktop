@@ -6,3 +6,4 @@ base:
     - customize_desktop
     - install_packages
     - install_gems
+    - install_pips
