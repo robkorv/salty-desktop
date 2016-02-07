@@ -66,6 +66,7 @@ customize_desktop:
     - virtualbox
     - vagrant
     - nodejs
+    - dropbox
   launcher_favorites_applications:
     - firefox
     - spotify

@@ -22,6 +22,9 @@ include:
 {% if 'nodejs' in customize_desktop.get('third_party_applications') %}
   - customize_desktop.install_nodejs
 {% endif %}
+{% if 'dropbox' in customize_desktop.get('third_party_applications') %}
+  - customize_desktop.install_dropbox
+{% endif %}
   - customize_desktop.unity_launcher
 {% if customize_desktop.get('configure_git') %}
   - customize_desktop.configure_git
