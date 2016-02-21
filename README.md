@@ -67,6 +67,7 @@ customize_desktop:
     - vagrant
     - nodejs
     - dropbox
+    - smplayer
   launcher_favorites_applications:
     - firefox
     - spotify
